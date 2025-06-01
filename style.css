@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+}
+header{
+    width: 100%;
+    height: 50px;
+    border-bottom: 3px solid black;
+    background-color: rgb(68, 68, 68);
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+.logo{
+    display: inline-block;
+    font-size: 27px;
+    margin: 7px 0px 0px 10px;
+    cursor: none;
+    text-shadow: 2px 2px 2px black,4px 4px 4px black;
+}
+
+#drop{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 900;
+    margin: 5px 10px 0px 0px;
+    border: 2px solid transparent;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    align-content: center;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#drop{
+    float: right;
+}
+#drop:hover{
+    background-color: rgb(85, 82, 82);
+    box-shadow: 0px 0px 10px black;
+}
+
+
+#dropdown{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgb(40, 40, 40);
+    z-index: 200;
+}
+#close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#close:hover{
+    color: red;
+    text-shadow: 2px 2px 2px black,4px 4px 4px black;
+    transform: scale(1.3);
+}
+#dropdown h1{
+    color: white;
+    margin-top: 40px;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: none;
+    text-shadow: 2px 2px 2px black,4px 4px 4px black;
+}
+#audiobox{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+#audiobox audio{
+    width: 90%;
+    margin: 10px 0px;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+#out{
+    width: 600px;
+    height: 600px;
+    background-color: rgb(61, 62, 61);
+    display: flex;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    box-shadow: 2px 2px 2px black,0px 0px 10px black;
+    animation: ro 2s linear infinite;
+}
+@keyframes ro{
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+#center{
+    background-color: rgb(40, 39, 39);
+    width: 50%;
+    height: 50%;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+#in{
+    width: 20%;
+    height: 20%;
+    background-color: rgb(28, 28, 28);
+    border-radius: 100%;
+    text-align: center;
+    align-content: center;
+    color: white;
+    border: 2px solid black;
+    font-size: 25px;
+}
+
+
+
+footer{
+    width: 100%;
+    height: 60px;
+    border-top: 3px solid black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    align-content: center;
+}
+footer audio{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline-style: none;
+}
